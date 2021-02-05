@@ -7,4 +7,4 @@
 - その端末の解像度にあった壁紙を作ることができる
 
 ## こんな感じの壁紙を作りたい
-![example](./image/example.png)
+<img src="./image/example.png" width="320px">
