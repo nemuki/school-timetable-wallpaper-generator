@@ -20,6 +20,11 @@
             <button class="operationButton" onclick="addCell()">+</button>
             <button class="operationButton" onclick="">-</button>
         </div>
+        <button onclick="downloadImage()">DL</button>
+        <div>
+            <p>画面サイズ</p>
+            <p id="displaySize"></p>
+        </div>
     </div>
 
     <table id="timetable">
@@ -37,6 +42,10 @@
         </tbody>
     </table>
 
+    <img id="canvas">
+    <a id="dl-link"></a>
+
+    <script src="./js/html2canvas.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
