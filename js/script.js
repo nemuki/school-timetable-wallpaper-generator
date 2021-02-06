@@ -1,5 +1,16 @@
-const table = document.getElementById('timetable');
+'use strict'
 
+window.onload = getScreenSize();
+
+var screenWidth, screenHeight;
+function getScreenSize() {
+    let displaySize = document.getElementById('displaySize');
+    screenWidth = screen.width;
+    screenHeight = screen.height;
+    displaySize.innerHTML = screenWidth + " x " + screenHeight;
+}
+
+const table = document.getElementById('timetable');
 function addRow() {
     // テーブルのインデックス 0 の行（一行目）に行を挿入
     let newRow = table.insertRow(-1);
