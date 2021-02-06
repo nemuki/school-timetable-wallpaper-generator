@@ -13,7 +13,23 @@ function addRow() {
     let newSubject = document.createTextNode('教科名');
     newCell1.contentEditable = true;
     newCell1.appendChild(newDate);
-    
+
     newCell2.contentEditable = true;
     newCell2.appendChild(newSubject);
+}
+
+function addCell() {
+    // 行数取得
+    let rows = table.rows.length;
+
+    // 各行末尾にセルを追加
+    for (let i = 0; i < rows; i++) {
+        let cell = table.rows[i].insertCell(-1);
+        let cols = table.rows[i].cells.length;
+        if (cols > 10) {
+            continue;
+        }
+        cell.innerHTML = (cols - 1) + "コマ目";
+        cell.contentEditable = true;
+    }
 }
