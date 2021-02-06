@@ -1,13 +1,26 @@
+#timetable {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 td {
     border: 1px solid #333;
+    background-color: aliceblue;
+}
+
+.main {
+    position: relative;
 }
 
 .operation {
     display: flex;
+    height: auto;
+    margin-bottom: 5px;
 }
 
 .operationPanel {
-    margin: 0px 10px 5px 0px;
+    margin: 0px 10px 0px 0px;
 }
 
 .operationButton {
