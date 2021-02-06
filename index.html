@@ -13,30 +13,24 @@
         <div class="operationPanel">
             <div>行の追加</div>
             <button class="operationButton" onclick="addRow()">+</button>
-            <button class="operationButton" onclick="addRow()">-</button>
+            <button class="operationButton" onclick="">-</button>
         </div>
         <div class="operationPanel">
             <div>列の追加</div>
-            <button class="operationButton" onclick="addRow()">+</button>
-            <button class="operationButton" onclick="addRow()">-</button>
+            <button class="operationButton" onclick="addCell()">+</button>
+            <button class="operationButton" onclick="">-</button>
         </div>
     </div>
 
     <table id="timetable">
-        <thead>
-            <tr>
-                <td>
-                    <div contenteditable></div>
-                </td>
-                <td>1コマ目</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>MM/DD</td>
-                <td>教科名</td>
-            </tr>
-        </tbody>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true">1コマ目</td>
+        </tr>
+        <tr>
+            <td contenteditable="true">MM/DD</td>
+            <td contenteditable="true">教科名</td>
+        </tr>
     </table>
 
     <script src="./js/script.js"></script>
