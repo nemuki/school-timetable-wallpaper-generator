@@ -9,10 +9,25 @@
 </head>
 
 <body>
+    <div class="operation">
+        <div class="operationPanel">
+            <div>行の追加</div>
+            <button class="operationButton" onclick="addRow()">+</button>
+            <button class="operationButton" onclick="addRow()">-</button>
+        </div>
+        <div class="operationPanel">
+            <div>列の追加</div>
+            <button class="operationButton" onclick="addRow()">+</button>
+            <button class="operationButton" onclick="addRow()">-</button>
+        </div>
+    </div>
+
     <table id="timetable">
         <thead>
             <tr>
-                <td></td>
+                <td>
+                    <div contenteditable></div>
+                </td>
                 <td>1コマ目</td>
             </tr>
         </thead>
@@ -23,7 +38,6 @@
             </tr>
         </tbody>
     </table>
-    <button id="row_add">行を追加</button>
 
     <script src="./js/script.js"></script>
 </body>
