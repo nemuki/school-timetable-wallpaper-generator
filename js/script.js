@@ -44,3 +44,14 @@ function addCell() {
         cell.contentEditable = true;
     }
 }
+
+document.downloadImage = () => {
+    const tableElement = document.querySelector('#timetable');
+    const linkElement = document.querySelector('#dl-link');
+
+    html2canvas(tableElement).then(canvas => {
+        linkElement.href = canvas.toDataURL('image/png');
+        linkElement.download = 'table.png';
+        linkElement.click();
+    });
+}
