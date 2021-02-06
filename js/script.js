@@ -46,7 +46,7 @@ function addCell() {
 }
 
 document.downloadImage = () => {
-    const tableElement = document.querySelector('#timetable');
+    const tableElement = document.querySelector('#main');
     const linkElement = document.querySelector('#dl-link');
 
     html2canvas(tableElement).then(canvas => {

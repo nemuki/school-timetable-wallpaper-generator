@@ -20,27 +20,30 @@
             <button class="operationButton" onclick="addCell()">+</button>
             <button class="operationButton" onclick="">-</button>
         </div>
-        <button onclick="downloadImage()">DL</button>
-        <div>
+        <button class="operationPanel" onclick="downloadImage()">DL</button>
+        <div class="operationPanel">
             <p>画面サイズ</p>
             <p id="displaySize"></p>
         </div>
     </div>
 
-    <table id="timetable">
-        <thead>
-            <tr>
-                <td contenteditable="true"></td>
-                <td contenteditable="true">1コマ目</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td contenteditable="true">MM/DD</td>
-                <td contenteditable="true">教科名</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="main" class="main">
+        <table id="timetable">
+            <thead>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true">1コマ目</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">MM/DD</td>
+                    <td contenteditable="true">教科名</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="./image/sample.jpg" alt="壁紙">
+    </div>
 
     <img id="canvas">
     <a id="dl-link"></a>
